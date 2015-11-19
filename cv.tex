@@ -2,184 +2,21 @@
 % -- XeLaTeX => PDF (BIBER)
 
 \documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
-                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
 
 \sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
 
 \begin{document}
 
-\header{Jonathan}{Mash}           % Your name
+\header{Jonathan}{Mash}
 \lastupdated
 
-%----------------------------------------------------------------------------------------
-%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
-%----------------------------------------------------------------------------------------
-
-\begin{aside}
-%
-\section{contact}
-15 Windfield Cres
-Kingston, ON, K7K 6G3
-Canada
-~
-+1 (613)-329-0825
-~
-me@jonmash.ca
-%
-\section{programming}
-{\color{red} $\varheartsuit$} Node.JS
-Javascript, HTML5, CSS3, C/C++, C\#, 
-{\color{red} $\varheartsuit$} Git
-%
-\section{interests}
-electronics, robotics, drones, solar/alternative energies
-%
-\end{aside}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{skills}
-  \vspace{-0.2cm}
-
-Project management, product development, product design. electronics design, embedded systems, prototyping, manufacturing.
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{experience}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-  {2010--Now}
-  {SPARQ Systems}
-  {Kingston, Ontario, Canada}
-  {\jobtitle{Product Development Lead}
-\begin{itemize}
-\item Designed, prototyped, and manufactured a compact in-home device for solar panel monitoring. Involved in the design decisions of the associated web portal.
-\item Developed novel communication protocol over Power Line Communication using FEC coding for robust monitoring and control of the microinverters.
-\item Developed the manufacturing, assembly, and testing procedures to ensure only high quality products are delivered to our customers.
-\item Trusted by senior management to provide independent engineering support to customers due to in-depth knowledge of the entire system.
-\end{itemize}
-}
-%------------------------------------------------
-\entry
-  {2009--2013}
-  {ePOWER--Centre for Energy and Power Electronics Research}
-  {Kingston, Ontario, Canada}
-  {\jobtitle{Engineering Research Assistant}
-  \begin{itemize}
-    \item Researched and designed a medium-power front-end converter for telecommunications equipment using simulation tools. 
-    \item Developed a wind turbine emulator using an induction motor connected to a permanent magnet synchronous generator for use in research activities.
-    \item Developed novel non-linear control strategies for PMSG connected wind turbine systems.
-  \end{itemize}}
-%------------------------------------------------
-\entry
-  {2004--2008}
-  {Queen's University Solar Vehicle Tam}
-  {Kingston, Ontario Canada}
-  {\jobtitle{Project Manager}\\
-  Competed at two international competitions:
-  \begin{itemize}
-    \item Panasonic World Solar Challenge, Australia (October 2007)
-    \item North American Solar Challenge, USA and Canada (July 2005)
-  \end{itemize}
-  Responsibilities:
-  \begin{itemize}
-    \item Oversaw all aspects of a semi-professional racing team.
-    \item Supervised the design, fabrication and testing of the vehicle.
-    \item Directed efforts in: marketing, sponsorship, event planning, and PR.
-    \item Managed financial planning, purchasing, cash flow, and budgeting.
-    \item
-  \end{itemize}
-  Skills and Innovative Approaches:
-  \begin{itemize}
-    \item Reorganized the team structure to increase efficiency and improve communication flow.
-    \item Led fundraising efforts, raising over \$500,000 worth of cash and donations.
-    \item Knowledge of all vehicle design incl.: electrical, mechanical, and software.
-    \item Designed and constructed a solar array producing over 1200 Watts.
-    \item Team’s expert on power systems, lithium-based batteries, and solar cells.
-  \end{itemize}
-}
-%------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{education}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{2009--2013}
-{M.Sc. {\normalfont in Electrical Engineering}}
-{Queen's University @ Kingston}
-{Queen’s Centre for Energy and Power Electronics Research--Dr. Praveen Jain\\
-Course Average: 92\%}
-{\vspace{-0.3cm}}
-%------------------------------------------------
-\entry
-{2004--2009}
-{B.Sc. {\normalfont in Electrical Engineering}}
-{Queen's University @ Kingston}
-{Ranked 2\textsuperscript{nd} of 45 students in Electrical Engineering.\\
-Ranked 5\textsuperscript{th} of 576 students in all of Engineering.\\
-Final Year Average: 93\%}
-%------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	OTHER QUALIFICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{other qualifications}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{2013}
-{Qualification}
-{Institution}
-{\vspace{-0.3cm}}
-%------------------------------------------------
-\entry
-{2011}
-{Qualification}
-{Institution}
-{\vspace{-0.3cm}}
-%------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{awards}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{2014}
-{Award name}
-{Institution}
-{Award description. Award description. Award description. Award description. Award description. Award description. Award description. }
-%------------------------------------------------
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{interests}
-  \vspace{-0.2cm}
-
-\textbf{professional:} professional interest 1, professional interest 2 and professional interest 3. \textbf{personal:} personal interest 1, personal interest 2, personal interest 3 and personal interest 4.
-
-%----------------------------------------------------------------------------------------
+\input{sidebar.tex}
+\input{skills.tex}
+\input{experience.tex}
+\input{education.tex}
+\clearpage
+\input{awards.tex}
+\input{publications.tex}
+\input{affiliations.tex}
 
 \end{document}
