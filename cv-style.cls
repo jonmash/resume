@@ -81,8 +81,8 @@
 
 \newcommand{\header}[2]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
-    \node [anchor=center] (name) at (box) {%
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
+    \node [anchor=center, below=-0.5cm] (name) at (box) {%
       \fontsize{40pt}{65pt}\color{header}%
       {\bodyfont #1}{\headingfont  #2}
     };
@@ -129,7 +129,6 @@
         orange\or%
         green\or%
         blue\or%
-        aquamarine\or%
         red\or%
         purple\else%
         headercolor\fi%
@@ -189,7 +188,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1, 1.87)
+  \begin{textblock}{3.6}(1, 2.37)
   \begin{flushright}
   \obeycr
 }{%
@@ -203,7 +202,7 @@
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=5.6cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.6cm,top=1.5cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     pdftitle=Resume \textbar{} Jonathan Mash,
