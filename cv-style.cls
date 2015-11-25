@@ -117,10 +117,10 @@
 \setlength{\TPHorizModule}{0.01\paperwidth}
 \setlength{\TPVertModule}{0.01\paperwidth}
 
-\newcommand{\lastupdated}{ 
+\newcommand{\lastupdated}{
   \begin{textblock}{10}(11.3, 0.05)
     \raggedleft
-    \fontsize{8pt}{10pt}\color{date}\thinfont 
+    \fontsize{8pt}{10pt}\color{date}\thinfont
     \lastupdatedtext{} \today
   \end{textblock}}
 
@@ -146,12 +146,12 @@
 }
 
 \renewcommand{\section}[1]{
-  {\par\vspace{\parskip}
+  {\par\vspace{.75\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}}
+  \par\vspace{.75\parskip}}
 }
 
 \renewcommand{\subsection}[2]{
@@ -169,7 +169,7 @@
 %----------------------------------------------------------------------------------------
 % List environment %
 %----------------------------------------------------------------------------------------
-
+\usepackage{calc}
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
@@ -178,7 +178,9 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{12.5cm}{%
+  \parbox[t]{\textwidth-13.5cm}{%
+    \centering\leavevmode\color{gray}#1%
+  }&\parbox[t]{13.5cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
