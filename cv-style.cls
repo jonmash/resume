@@ -11,6 +11,8 @@
 \LoadClass{article}
 
 
+\usepackage{enumitem}
+
 %----------------------------------------------------------------------------------------
 % Colors %
 %----------------------------------------------------------------------------------------
@@ -146,12 +148,12 @@
 }
 
 \renewcommand{\section}[1]{
-  {\par\vspace{.75\parskip}
+  {\par\vspace{\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{.75\parskip}}
+  \par\vspace{\parskip}}
 }
 
 \renewcommand{\subsection}[2]{
@@ -178,9 +180,9 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  \parbox[t]{\textwidth-13.5cm}{%
+  \parbox[t]{\textwidth-13.2cm}{%
     \centering\leavevmode\color{gray}#1%
-  }&\parbox[t]{13.5cm}{%
+  }&\parbox[t]{13.2cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -215,7 +217,7 @@
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=5.6cm,top=1.5cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.6cm,top=1.5cm,right=1.5cm,bottom=1.0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     pdftitle=Resume \textbar{} Jonathan Mash,
