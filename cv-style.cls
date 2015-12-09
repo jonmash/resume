@@ -180,9 +180,19 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  \parbox[t]{\textwidth-13.2cm}{%
+  \parbox[t]{\textwidth-13.4cm}{%
     \centering\leavevmode\color{gray}#1%
-  }&\parbox[t]{13.2cm}{%
+  }&\parbox[t]{13.4cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{\parsep}%
+  }\\}
+  
+\newcommand{\entryfp}[4]{%
+  \parbox[t]{\textwidth-17cm}{%
+    \centering\leavevmode\color{gray}#1%
+  }&\parbox[t]{17cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -217,7 +227,7 @@
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=5.6cm,top=1.5cm,right=1.5cm,bottom=1.0cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.2cm,top=1.5cm,right=1.5cm,bottom=1.0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     pdftitle=Resume \textbar{} Jonathan Mash,
