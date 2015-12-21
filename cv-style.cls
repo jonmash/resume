@@ -21,9 +21,9 @@
 
 \definecolor{white}{RGB}{255,255,255}
 
-\definecolor{darkgray}{HTML}{2B2B2B}
-\definecolor{gray}{HTML}{2B2B2B}
-\definecolor{lightgray}{HTML}{7A7A7A}
+\definecolor{darkgray}{HTML}{1B1B1B}
+\definecolor{gray}{HTML}{202020}
+\definecolor{lightgray}{HTML}{707070}
 
 \definecolor{blue}{HTML}{11ABB0}
 \definecolor{red}{HTML}{FA2772}
@@ -63,7 +63,7 @@
 %\newfontfamily\headingfont{RobotoCondensed-Bold}[Path=fonts/]
 
 \newfontfamily\bodyfont{OpenSans-Regular-webfont}[Path=fonts/]
-\newfontfamily\bodyfontit{OpenSans-LightItalic-webfont}[Path=fonts/]
+\newfontfamily\bodyfontit{OpenSans-Italic-webfont}[Path=fonts/]
 \newfontfamily\thinfont{OpenSans-Light-webfont}[Path=fonts/]
 \newfontfamily\headingfont{OpenSans-Bold-webfont}[Path=fonts/]
 \newfontfamily\headingfontbold{OpenSans-ExtraBold-webfont}[Path=fonts/]
@@ -153,7 +153,7 @@
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}}
+  \par\vspace{.75\parskip}}
 }
 
 \renewcommand{\subsection}[2]{
