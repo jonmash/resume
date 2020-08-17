@@ -55,7 +55,7 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
 %\newfontfamily\bodyfont{Roboto-Regular}[Path=fonts/]
 %\newfontfamily\bodyfontit{Roboto-LightItalic}[Path=fonts/]
@@ -79,7 +79,7 @@
 %----------------------------------------------------------------------------------------
 % Icons (Font Awesome) %
 %----------------------------------------------------------------------------------------
-\newfontfamily\FontAwesome{fontawesome-webfont}[Path=fonts/]
+%\newfontfamily\FontAwesome{fontawesome-webfont}[Path=fonts/]
 \RequirePackage[]{fontawesome}
 
 
@@ -140,7 +140,9 @@
         green\or%
         blue\or%
         red\or%
-        purple\else%
+		cyan\or%
+        purple\or%
+		teal\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -210,7 +212,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1, 2.37)
+  \begin{textblock}{3.8}(1, 2.36)
   \begin{flushright}
   \obeycr
 }{%
