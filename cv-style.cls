@@ -212,7 +212,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.8}(1, 2.36)
+  \begin{textblock}{4.25}(0.75, 2.36)
   \begin{flushright}
   \obeycr
 }{%
